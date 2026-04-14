@@ -4,8 +4,8 @@
 # =========================================
 
 # ===== OpenAI / ChatGPT =====
-AND,((DOMAIN-KEYWORD, chatgpt-async-webps-prod-), (DOMAIN-SUFFIX, webpubsub.azure.com)),AI
-AND,((DOMAIN-KEYWORD, openaicom-api-), (DOMAIN-SUFFIX, azurefd.net)),AI
+AND,((DOMAIN-KEYWORD, chatgpt-async-webps-prod-), (DOMAIN-SUFFIX, webpubsub.azure.com))
+AND,((DOMAIN-KEYWORD, openaicom-api-), (DOMAIN-SUFFIX, azurefd.net))
 
 DOMAIN, chatgpt.livekit.cloud
 DOMAIN, host.livekit.cloud
@@ -62,8 +62,7 @@ DOMAIN-SUFFIX, generativeai.google
 DOMAIN-SUFFIX, antigravity.google
 DOMAIN-SUFFIX, antigravity-unleash.goog
 DOMAIN, daily-cloudcode-pa.sandbox.googleapis.com
-DOMAIN, daily-cloudcode-pa.googleapis.com
-DOMAIN-KEYWORD, antigravity-auto-updater-
+AND,((DOMAIN-KEYWORD, antigravity-auto-updater-), (DOMAIN-SUFFIX, run.app))
 
 # ===== Anthropic / Claude =====
 DOMAIN-SUFFIX, anthropic.com
