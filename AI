@@ -1,36 +1,40 @@
-# 2026-04-13 11:34:56
-# OpenAI
-AND, ((DOMAIN-KEYWORD, chatgpt-async-webps-prod-), (DOMAIN-SUFFIX, webpubsub.azure.com))
-AND, ((DOMAIN-KEYWORD, openaicom-api-), (DOMAIN-SUFFIX, azurefd.net))
+# =========================================
+# AI Services Ruleset (Optimized for Surge)
+# Updated: 2026-04-14
+# =========================================
+
+# ===== OpenAI / ChatGPT =====
+AND, (DOMAIN-KEYWORD, chatgpt-async-webps-prod-), (DOMAIN-SUFFIX, webpubsub.azure.com)
+AND, (DOMAIN-KEYWORD, openaicom-api-), (DOMAIN-SUFFIX, azurefd.net)
+
 DOMAIN, chatgpt.livekit.cloud
 DOMAIN, host.livekit.cloud
+DOMAIN, turn.livekit.cloud
+
 DOMAIN, openai.com.cdn.cloudflare.net
 DOMAIN, openaiapi-site.azureedge.net
 DOMAIN, openaicomproductionae4b.blob.core.windows.net
 DOMAIN, production-openaicom-storage.azureedge.net
-DOMAIN, turn.livekit.cloud
 DOMAIN, openaicom.imgix.net
-DOMAIN-SUFFIX, chat.com
+
+DOMAIN-SUFFIX, openai.com
 DOMAIN-SUFFIX, chatgpt.com
-DOMAIN-SUFFIX, crixet.com
+DOMAIN-SUFFIX, chat.com
 DOMAIN-SUFFIX, oaistatic.com
 DOMAIN-SUFFIX, oaiusercontent.com
-DOMAIN-SUFFIX, openai.com
 DOMAIN-SUFFIX, sora.com
+DOMAIN-SUFFIX, crixet.com
 
-# Copilot
+# ===== GitHub Copilot =====
 DOMAIN, api.githubcopilot.com
 DOMAIN, copilot-proxy.githubusercontent.com
 DOMAIN, copilot.microsoft.com
 DOMAIN, sydney.bing.com
 
-# Github Copilot
-DOMAIN, api.githubcopilot.com
-
-# Github Models
+# ===== GitHub Models =====
 DOMAIN, models.inference.ai.azure.com
 
-# Gemini
+# ===== Google Gemini / DeepMind =====
 DOMAIN, ai.google.dev
 DOMAIN, aida.googleapis.com
 DOMAIN, aistudio.google.com
@@ -40,124 +44,114 @@ DOMAIN, bard.google.com
 DOMAIN, deepmind.com
 DOMAIN, deepmind.google
 DOMAIN, geller-pa.googleapis.com
-DOMAIN, gemini.google
-DOMAIN, gemini.google.com
-DOMAIN, generativeai.google
 DOMAIN, generativelanguage.googleapis.com
 DOMAIN, makersuite.google.com
 DOMAIN, proactivebackend-pa.googleapis.com
 DOMAIN, robinfrontend-pa.googleapis.com
 DOMAIN, webchannel-alkalimakersuite-pa.clients6.google.com
-DOMAIN, notebooklm.google
 DOMAIN, notebooklm.google.com
-DOMAIN, jules.google
 DOMAIN, jules.google.com
 DOMAIN, labs.google
 DOMAIN, aisandbox-pa.googleapis.com
 
-# Google Antigravity
+DOMAIN-SUFFIX, gemini.google
+DOMAIN-SUFFIX, gemini.google.com
+DOMAIN-SUFFIX, generativeai.google
+
+# ===== Google Antigravity =====
 DOMAIN-SUFFIX, antigravity.google
 DOMAIN-SUFFIX, antigravity-unleash.goog
 DOMAIN, daily-cloudcode-pa.sandbox.googleapis.com
 DOMAIN, daily-cloudcode-pa.googleapis.com
-AND, ((DOMAIN-KEYWORD, antigravity-auto-updater-), (DOMAIN-SUFFIX, run.app))
+AND, (DOMAIN-KEYWORD, antigravity-auto-updater-), (DOMAIN-SUFFIX, run.app)
 
-# Anthropic
+# ===== Anthropic / Claude =====
 DOMAIN-SUFFIX, anthropic.com
 DOMAIN-SUFFIX, claude.ai
 DOMAIN-SUFFIX, claudeusercontent.com
 IP-CIDR, 160.79.104.0/23, no-resolve
 IP-CIDR6, 2607:6bc0::/48, no-resolve
 
-# JetBrains AI
+# ===== JetBrains AI =====
 DOMAIN-SUFFIX, grazie.ai
 DOMAIN-SUFFIX, grazie.aws.intellij.net
 DOMAIN-SUFFIX, jetbrains.ai
 
-# Meta AI
+# ===== Meta AI =====
 DOMAIN, imagine.meta.com
 DOMAIN-SUFFIX, meta.ai
 
-# Perplexity
+# ===== Perplexity =====
 DOMAIN, pplx-res.cloudinary.com
-DOMAIN-SUFFIX, pplx.ai
 DOMAIN-SUFFIX, perplexity.ai
 DOMAIN-SUFFIX, perplexity.com
+DOMAIN-SUFFIX, pplx.ai
 
-# Mistral AI
+# ===== Mistral AI =====
 DOMAIN, chat.mistral.ai
 DOMAIN, console.mistral.ai
 DOMAIN-SUFFIX, mistral.ai
 
-# Grok AI
+# ===== Grok (xAI) =====
 DOMAIN, api.x.ai
 DOMAIN-SUFFIX, x.ai
 DOMAIN-SUFFIX, grok.com
 
-# Trae AI
+# ===== Trae AI =====
 DOMAIN, trae-api-sg.mchost.guru
 DOMAIN-SUFFIX, trae.ai
 
-# OpenRouter
+# ===== OpenRouter =====
 DOMAIN-SUFFIX, openrouter.ai
 
-# TokenFlux
+# ===== TokenFlux =====
 DOMAIN-SUFFIX, tokenflux.ai
 
-# Groq
+# ===== Groq =====
 DOMAIN-SUFFIX, groq.com
 
-# Together
+# ===== Together =====
 DOMAIN-SUFFIX, together.ai
 
-# Fireworks
+# ===== Fireworks =====
 DOMAIN-SUFFIX, fireworks.ai
 
-# Hyperbolic
+# ===== Hyperbolic =====
 DOMAIN, api.hyperbolic.xyz
 DOMAIN-SUFFIX, hyperbolic.ai
 
-# Mistral
-DOMAIN-SUFFIX, mistral.ai
-
-# Jina AI
+# ===== Jina AI =====
 DOMAIN-SUFFIX, jina.ai
 
-# GPUStack
-# DOMAIN-SUFFIX, gpustack.ai
-
-# VoyageAI
+# ===== Voyage AI =====
 DOMAIN-SUFFIX, voyageai.com
 
-# Vertex AI
+# ===== Vertex AI =====
 DOMAIN, aiplatform.googleapis.com
 
-# Poe
+# ===== Poe =====
 DOMAIN-SUFFIX, poe.com
 
-# Cerebras AI
+# ===== Cerebras =====
 DOMAIN-SUFFIX, cerebras.ai
 
-# Vercel AI
+# ===== Vercel AI Gateway =====
 DOMAIN, ai-gateway.vercel.sh
 
-# Hugging Face AI
+# ===== HuggingFace =====
 DOMAIN, router.huggingface.co
 
-# Nvidia
+# ===== NVIDIA API =====
 DOMAIN, integrate.api.nvidia.com
 
-# Kiro
+# ===== Kiro =====
 DOMAIN-SUFFIX, kiro.dev
 
-# AWS Bedrock
-aws.amazon.com
+# ===== AWS (Bedrock etc.) =====
+DOMAIN-SUFFIX, amazon.com
 
-# CerebrasAI
-cerebras.ai
+# ===== MiniMax =====
+DOMAIN-SUFFIX, minimax.io
 
-# MiniMax国际版
-minimax.io
-
-# 智谱国际版
-z.ai
+# ===== Zhipu (智谱 AI 国际版) =====
+DOMAIN-SUFFIX, z.ai
